@@ -2,6 +2,9 @@
 
 A very simple Todo application built with JavaFX, using Gradle for dependency management and build automation.
 
+This project was created as a simple Todo application to explore and learn JavaFX. The goal is to familiarize myself with the framework and its capabilities. This repository serves as a personal learning resource and a way to share my progress in understanding JavaFX.
+
+
 ## Features
 - Add and delete tasks.
 - Mark tasks as completed.
