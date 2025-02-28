@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="ToDoController" pannable="true" fitToWidth="true">
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="TODO APP" styleClass="h1">
+            <VBox.margin>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </VBox.margin>
+        </Label>
+        <GridPane alignment="CENTER" hgap="5" vgap="5" styleClass="inputDiv">
+            <TextField 
+                fx:id="todoInput"
+                onAction="#handleUserInput"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="0"
+                styleClass="input" 
+                promptText="Add your new todo"
+                prefWidth="300" minWidth="200"
+                prefHeight="50" minHeight="40"
+             />
+            <Button
+                onAction="#handleUserInput"
+                text="+"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="0"
+                styleClass="button"
+                prefWidth="50" minWidth="40" 
+                prefHeight="50" minHeight="40"
+            />
+        </GridPane>
+        <VBox fx:id="todoList"></VBox>
+        <GridPane alignment="CENTER" styleClass="bottom" minHeight="60" fx:id="bottomTask">
+            <Button text="Clear All" fx:id="clearAll" />
+        </GridPane>
+    </VBox>
+</ScrollPane>
