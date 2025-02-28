@@ -1,4 +1,4 @@
-# TodoApp
+# Mr ToDoer
 
 A very simple Todo application built with JavaFX, using Gradle for dependency management and build automation.
 
